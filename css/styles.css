@@ -27,6 +27,7 @@ p{
 ul{
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 .list {
@@ -40,6 +41,11 @@ ul{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+.header{
+    border-bottom: 1px solid var(--color-cornflower);
 }
 
 
@@ -52,8 +58,64 @@ ul{
 
 
 
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section.work{
+    padding-top: 0;
+    outline: 2px solid red;
+}
+
+.section.features{
+    outline: 2px solid red;
+}
+
+.features-list{
+    display: flex;
+    padding-left: 0;
+    outline: 2px solid green;}
+
+.features-list-item{
+    width: 264px;
+}
+
+.features-list-item:not(:last-child){
+    margin-right: 24px;
+}
 
 
+
+.work-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    padding-left: 0;
+    outline: 2px solid green;
+    }
+
+.team-list{
+    padding-left: 0;
+    display: flex;
+    margin-top: 72px;
+}
+.team-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid green;
+}
+.team-list-item:not(:last-child){
+    margin-right: 24px;
+}
+
+.team-list-title{
+    margin-top: 32px;
+}
+.team-list-text{
+    margin-top: 8px;
+}
 
 
 
@@ -148,16 +210,30 @@ ul{
 .hero{
     background-color: var(--title-color);
     text-align: center;
+    outline: 2px solid red;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
 }
+
+
 .hero-title{
     color: var(--white-color);
     font-size: 56px;
     line-height: 1.07;
-}
+    margin-bottom: 48px;
+    width: 494px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid green;
+    }
+    
+
 .hero-btn{
     color: var(--white-color);
     background-color:var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    outline: 2px solid green;
 }
 .hero-btn:hover, .hero-btn:focus{
     background-color:var(--hover-color);
@@ -168,21 +244,28 @@ ul{
 /* ================================SECTION OUR WORK============================= */
 
 /* ================================SECTION OUR TEAM============================= */
-.team{
+.section.team{
     background-color: var(--color-cloud);
+    outline: 2px solid red;
 }
 
 
 /* =======================================FOOTER=============================== */
 .footer{
     background-color:var(--title-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo-footer{
     color: var(--color-cloud);
+    outline: 2px solid green;
 }
 .footer-text{
+    width: 264px;
     color: var(--color-cornflower);
     line-height: 1.5;
+    margin-top: 16px;
+    outline: 2px solid green;
 }
 
 
@@ -197,4 +280,41 @@ ul{
 .filter-btn:hover, .filter-btn:focus{
     color: var(--white-color);
     background-color:var(--hover-color);
+}
+
+
+
+
+
+
+
+
+
+
+.section.portfolio{
+    padding-top: 96px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    outline: 2px solid green;
+}
+.filter-item:not(:last-child){
+    margin-right: 24px;
+}
+.portfolio-list{
+    padding-left: 0;
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.portfolio-list-title{
+    margin-top: 32px;
+    outline: 2px solid green;
+}
+.portfolio-list-text{
+    margin-top: 8px;
+    outline: 2px solid green;
 }

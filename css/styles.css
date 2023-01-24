@@ -48,6 +48,66 @@ ul{
     border-bottom: 1px solid var(--color-cornflower);
 }
 
+.menu{
+    display: flex;
+    margin-left: 76px;
+    padding-left: 0;
+}
+
+.menu-item{
+outline: 2px solid green;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 40px;  
+}
+.menu-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.contacts{
+    display: flex;
+    padding-left: 0;
+}
+
+
+
+.contacts-item{
+outline: 2px solid green;
+}
+
+.contacts-item:not(:last-child){
+    margin-right: 40px;
+    
+}
+.contacts-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-box{
+    display: flex;
+    align-items: center;
+}
+
+.contacts-box{
+    display: flex;
+    /* align-items: center; не міняє вигляд*/
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,10 +135,11 @@ ul{
 .features-list{
     display: flex;
     padding-left: 0;
-    outline: 2px solid green;}
+   }
 
 .features-list-item{
     width: 264px;
+    outline: 2px solid green;
 }
 
 .features-list-item:not(:last-child){
@@ -116,6 +177,21 @@ ul{
 .team-list-text{
     margin-top: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

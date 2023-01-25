@@ -10,23 +10,28 @@
 
 body {
     /* width: 1440px; */
-    background-color:var(--white-color);
-    color:var(--primary-text-color);
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
-p{
+
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
-ul{
+
+ul {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 
 }
 
@@ -34,68 +39,75 @@ ul{
     list-style: none;
 }
 
+img {
+    display: block;
+    /* outline: 2px solid green; */
+}
+
 /*========================= COMPONENTS============================= */
-.container{
+.container {
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    /* outline: 2px solid aqua; */
 
 }
 
-.header{
+.header {
     border-bottom: 1px solid var(--color-cornflower);
 }
 
-.menu{
+.menu {
     display: flex;
     margin-left: 76px;
-    padding-left: 0;
 }
 
-.menu-item{
-outline: 2px solid green;
+.menu-item {
+    outline: 2px solid green;
 }
 
-.menu-item:not(:last-child){
-    margin-right: 40px;  
-}
-.menu-link{
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.contacts{
-    display: flex;
-    padding-left: 0;
-}
-
-
-
-.contacts-item{
-outline: 2px solid green;
-}
-
-.contacts-item:not(:last-child){
+.menu-item:not(:last-child) {
     margin-right: 40px;
-    
 }
-.contacts-link{
+
+.menu-link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
-.header-box{
+
+.contacts {
+    display: flex;
+}
+
+
+
+.contacts-item {
+    outline: 2px solid green;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.contacts-link {
+    display: block;
+}
+
+.header-box {
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
-.nav-box{
+
+.nav-box {
     display: flex;
     align-items: center;
 }
 
-.contacts-box{
+.contacts-box {
     display: flex;
     /* align-items: center; не міняє вигляд*/
 }
@@ -118,63 +130,64 @@ outline: 2px solid green;
 
 
 
-.section{
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.section.work{
+.section.work {
     padding-top: 0;
     outline: 2px solid red;
 }
 
-.section.features{
+.section.features {
     outline: 2px solid red;
 }
 
-.features-list{
+.features-list {
     display: flex;
-    padding-left: 0;
-   }
+}
 
-.features-list-item{
+.features-list-item {
     width: 264px;
     outline: 2px solid green;
 }
 
-.features-list-item:not(:last-child){
+.features-list-item:not(:last-child) {
     margin-right: 24px;
 }
 
 
 
-.work-list{
+.work-list {
     display: flex;
     justify-content: space-between;
     margin-top: 72px;
-    padding-left: 0;
     outline: 2px solid green;
-    }
+}
 
-.team-list{
-    padding-left: 0;
+.team-list {
     display: flex;
     margin-top: 72px;
 }
-.team-list-item{
+
+.team-list-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 2px solid green;
-}
-.team-list-item:not(:last-child){
+    /* outline: 2px solid green; */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;}
+    
+
+.team-list-item:not(:last-child) {
     margin-right: 24px;
 }
-
-.team-list-title{
+.team-list-title {
     margin-top: 32px;
 }
-.team-list-text{
+
+.team-list-text {
     margin-top: 8px;
 }
 
@@ -236,6 +249,7 @@ outline: 2px solid green;
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .section-title {
     color: var(--title-color);
     font-size: 36px;
@@ -243,6 +257,7 @@ outline: 2px solid green;
     text-align: center;
     text-transform: capitalize;
 }
+
 .features-list-title,
 .team-list-title,
 .portfolio-list-title {
@@ -251,13 +266,15 @@ outline: 2px solid green;
     font-size: 20px;
     line-height: 1.2;
 }
+
 .features-list-text,
 .team-list-text,
-.portfolio-list-text{
+.portfolio-list-text {
     line-height: 1.5;
 }
+
 /* ==============================HEADER=================================== */
-.logo-header{
+.logo-header {
     color: var(--title-color);
 }
 
@@ -268,32 +285,38 @@ outline: 2px solid green;
     text-decoration: none;
     line-height: 1.5;
 }
-.menu-link:hover, .menu-link:focus{color: var(--hover-color);}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--hover-color);
+}
 
 
 /* ===========Contacts============== */
-.contacts-link{
+.contacts-link {
     color: var(--primary-text-color);
     font-style: normal;
     text-decoration: none;
     line-height: 1.5;
 }
-.contacts-link:hover, .contacts-link:focus{
+
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--hover-color);
 }
 
 /* ===================================SECTION HERO============================= */
-.hero{
+.hero {
     background-color: var(--title-color);
     text-align: center;
     outline: 2px solid red;
     padding-top: 188px;
     padding-bottom: 188px;
-    
+
 }
 
 
-.hero-title{
+.hero-title {
     color: var(--white-color);
     font-size: 56px;
     line-height: 1.07;
@@ -302,17 +325,21 @@ outline: 2px solid green;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid green;
-    }
-    
-
-.hero-btn{
-    color: var(--white-color);
-    background-color:var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
-    outline: 2px solid green;
 }
-.hero-btn:hover, .hero-btn:focus{
-    background-color:var(--hover-color);
+
+/* Кнопка на 2рх більша по висоті і ширині бо є бордер який не вказаний у макеті */
+/* Щоб кнопка була як у макеті треба бічні і вертикальні падінги зменшити на 1рх */
+.hero-btn {
+    padding: 16px 32px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hover-color);
 }
 
 /* ================================SECTION OUR FEATURES========================= */
@@ -320,23 +347,25 @@ outline: 2px solid green;
 /* ================================SECTION OUR WORK============================= */
 
 /* ================================SECTION OUR TEAM============================= */
-.section.team{
+.section.team {
     background-color: var(--color-cloud);
     outline: 2px solid red;
 }
 
 
 /* =======================================FOOTER=============================== */
-.footer{
-    background-color:var(--title-color);
+.footer {
+    background-color: var(--title-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo-footer{
+
+.logo-footer {
     color: var(--color-cloud);
     outline: 2px solid green;
 }
-.footer-text{
+
+.footer-text {
     width: 264px;
     color: var(--color-cornflower);
     line-height: 1.5;
@@ -347,15 +376,19 @@ outline: 2px solid green;
 
 
 /* ======================================PORTFOLIO STYLES=========================== */
-.filter-btn{
+.filter-btn {
+    padding: 11px 23px;
     color: var(--accent-color);
-    background-color:var(--color-cloud);
-    
+    background-color: var(--color-cloud);
     border: 1px solid var(--color-cornflower);
 }
-.filter-btn:hover, .filter-btn:focus{
+
+.filter-btn:hover,
+.filter-btn:focus {
     color: var(--white-color);
-    background-color:var(--hover-color);
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -367,30 +400,41 @@ outline: 2px solid green;
 
 
 
-.section.portfolio{
+.section.portfolio {
     padding-top: 96px;
 }
-.filter{
+
+.filter {
+    width: 586px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     outline: 2px solid green;
 }
-.filter-item:not(:last-child){
+
+.filter-item:not(:last-child) {
     margin-right: 24px;
 }
-.portfolio-list{
-    padding-left: 0;
+
+.portfolio-list {
     margin-top: 72px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
 }
-.portfolio-list-title{
-    margin-top: 32px;
+.wrapper{
+    padding-top: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--color-cornflower);
+    border-top: none;
+}
+.portfolio-list-title {
     outline: 2px solid green;
 }
-.portfolio-list-text{
+
+.portfolio-list-text {
     margin-top: 8px;
     outline: 2px solid green;
 }

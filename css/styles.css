@@ -18,15 +18,12 @@ body {
 
 h1,
 h2,
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
+h3,
 p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 
 ul {
     margin-top: 0;
@@ -41,7 +38,7 @@ ul {
 
 img {
     display: block;
-    /* outline: 2px solid green; */
+    outline: 2px solid green;
 }
 
 /*========================= COMPONENTS============================= */
@@ -51,7 +48,7 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid aqua; */
+    outline: 2px solid aqua;
 
 }
 
@@ -129,11 +126,19 @@ img {
 
 
 
-
+/* Done */
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+
+
+
+
+
+
+
 
 .section.work {
     padding-top: 0;
@@ -144,57 +149,63 @@ img {
     outline: 2px solid red;
 }
 
+/* done------------------------------- */
 .features-list {
     display: flex;
+    gap: 24px;
 }
 
 .features-list-item {
-    width: 264px;
+    flex-basis: calc((100%-72px)/4);
     outline: 2px solid green;
 }
 
-.features-list-item:not(:last-child) {
-    margin-right: 24px;
+.features-list-title{
+    margin-bottom: 8px;
 }
-
-
-
+/* --------------------------------------- */
+/* Done-------------------------------- */
 .work-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 72px;
+    gap: 24px;
     outline: 2px solid green;
 }
 
+.work-list-item{
+    flex-basis: calc((100%-48px)/3);
+    border: 1px solid var(--color-cornflower);
+}
+/* ------------------------------------------- */
+
+
+
+
+
+/* Вияснити що за ГЛЮКККККККККККК */
 .team-list {
     display: flex;
-    margin-top: 72px;
+    gap: 24px;
 }
 
 .team-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-basis: calc((100%-72px)/4);
+
+
     /* outline: 2px solid green; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;}
+    border-radius: 0px 0px 4px 4px;} */
     
 
-.team-list-item:not(:last-child) {
-    margin-right: 24px;
+.wrap{
+    background-color: tomato;
+    padding: 32px 16px;
+    text-align: center;
 }
-.team-list-title {
-    margin-top: 32px;
-}
-
-.team-list-text {
-    margin-top: 8px;
+.team-list-title{
+    margin-bottom: 8px;
 }
 
-
-
-
-
+/* ______________________________________________ */
 
 
 
@@ -251,6 +262,7 @@ img {
 }
 
 .section-title {
+    margin-bottom: 72px; 
     color: var(--title-color);
     font-size: 36px;
     line-height: 1.1;
@@ -418,9 +430,10 @@ img {
 }
 
 .portfolio-list {
-    margin-top: 72px;
+    
     display: flex;
     flex-wrap: wrap;
+    margin-top: 72px;
     row-gap: 48px;
     column-gap: 24px;
 }

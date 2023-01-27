@@ -280,16 +280,17 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-*/
+
 
 
 /* =======================================FOOTER=============================== */
+
 .footer{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--title-color);
-
 }
+
 
 .logo-footer {
     color: var(--color-cloud);

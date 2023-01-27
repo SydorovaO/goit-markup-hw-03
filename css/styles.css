@@ -82,6 +82,9 @@ img {
 }
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -127,11 +130,11 @@ img {
 .header-box {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logo-header {
+    margin-right: 76px;
+
     color: var(--title-color);
 }
 
@@ -141,13 +144,15 @@ img {
     align-items: center;
 }
 .menu {
-    display: flex;
-    margin-left: 76px;
+    display: flex; 
 }
 .menu-item {
     outline: 2px solid green;
 }
 .menu-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--title-color);
     font-weight: 500;
     text-decoration: none;
@@ -172,6 +177,8 @@ img {
 }
 .contacts-link {
     display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     color: var(--primary-text-color);
     font-style: normal;

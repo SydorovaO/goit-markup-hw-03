@@ -56,10 +56,10 @@ img {
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 2px solid green;
 }
 
 .menu-link.current {
@@ -242,7 +242,6 @@ img {
 
 .work-list-item {
     flex-basis: calc((100%-48px)/3);
-    border: 1px solid var(--color-cornflower);
 }
 
 /* ================================SECTION OUR TEAM============================= */
